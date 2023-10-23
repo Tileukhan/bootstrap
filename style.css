@@ -1,0 +1,154 @@
+
+.navbar-icon {
+    margin-left: 20px; 
+  }
+  .carousel-item {
+    height: 600px; 
+  }
+  .carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .carousel-inner .carousel-item {
+    transition-duration: 0.2s; 
+  }
+  .container img
+  {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+  ul {
+    list-style-type: none;
+}
+#countdown {
+  text-align: center;
+  font-size: 24px;
+}
+
+#timer {
+  display: inline-block;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#countdown {
+  font-size: 24px;
+  margin-top: 20px;
+}
+/* Add your CSS styling here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#todo-container h2 {
+  text-align: center;
+}
+
+#todo-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#todo-container li {
+  background-color: #e7e7e7;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #d4d4d4;
+  position: relative;
+  cursor: pointer;
+}
+
+#todo-container li.checked {
+  background-color: #888;
+  color: white;
+  text-decoration: line-through;
+}
+
+#todo-container .addBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+}
+
+#todo-container input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid #4CAF50;
+  font-size: 16px;
+}
+
+#todo-container input[type="text"]:focus {
+  outline: none;
+}
+.card-gif {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-gif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-btn {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.accordion-content {
+  display: none;
+  padding: 18px;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-btn.active, .accordion-btn:hover {
+  background-color: #ccc;
+}
+#animateMe {
+  position: absolute;
+  left: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+
+.carousel-item {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item.active {
+  transform: translateX(0); 
+  opacity: 1;
+}
