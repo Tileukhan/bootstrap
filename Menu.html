@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="shortcut icon" href="cook.jpg" type="jpg">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #31c1a6 ;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #07575b ;">
         <a class="navbar-brand" href="#">
             <img src="cook.jpg" width="100" height="100" alt="" class="navbar-icon">
         </a>
@@ -43,8 +43,7 @@
                         <h5 class="card-title">Beshbarmak</h5>
                         <p class="card-text">Delicious traditional cuisine with fresh pieces of ingredients.</p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Ingredients: Beef of lumb,dough,onions,potatoes,oil,salt and
-                                pepper,bouillon</li>
+                            <li class="list-group-item" data-toggle="tooltip" data-placement="top" title="beef or lamb, flour, water, onions, potatoes, salt, and black pepper">Ingredients</li>
                             <li class="list-group-item">OLD PRICE: 7990 KZT</li>
                             <li class="list-group-item">NEW PRICE: 4990 KZT</li>
                         </ul>
@@ -52,83 +51,74 @@
                 </div>
             </div>
             <div class="col">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src=https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg class="card-img-top" alt="beshbarmak">
-                        <div class="card-body">
-                            <h5 class="card-title">Pizza</h5>
-                            <p class="card-text">Delicious traditional cuisine of Italy with fresh pieces of ingredients.</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Ingredients: pizza dough, tomato sauce, cheese, various toppings,basil leaves, olive oil</li>
-                                <li class="list-group-item">OLD PRICE: 3990 KZT</li>
-                                <li class="list-group-item">NEW PRICE: 1990 KZT</li>
-                            </ul>
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" class="card-img-top" alt="pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">Delicious traditional cuisine of Italy with fresh pieces of ingredients.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" data-toggle="tooltip" data-placement="top" title=" pizza dough, tomato sauce, mozzarella cheese, various toppings, olive oil, oregano, and basil leaves">Ingredients</li>
+                            <li class="list-group-item">OLD PRICE: 3990 KZT</li>
+                            <li class="list-group-item">NEW PRICE: 1990 KZT</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="fugu fish.jpg" class="card-img-top" alt="beshbarmak">
+                    <img src="fugu fish.jpg" class="card-img-top" alt="fugu fish">
                     <div class="card-body">
                         <h5 class="card-title">Fugu fish</h5>
-                        <p class="card-text">Delicious japanese cuisine with fresh pieces of ingredients.</p>
+                        <p class="card-text">Delicious Japanese cuisine with fresh pieces of ingredients.</p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Ingredients: the flesh, skin, and sometimes the liver, while the internal organs</li>
-                            <li class="list-group-item">OLD PRICE:13990 KZT</li>
+                            <li class="list-group-item" data-toggle="tooltip" data-placement="top" title="Fugu fish, dashi, soy sauce, mirin, sake, green onions, daikon radish, and shiso leaves.">Ingredients</li>
+                            <li class="list-group-item">OLD PRICE: 13990 KZT</li>
                             <li class="list-group-item">NEW PRICE: 9990 KZT</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    
+    
         <br>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://www.foodandwine.com/thmb/DLjtzOx16wedHwsJfpzkOmpMGpM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/King-of-Blue-Cocktail-FT-RECIPE0523-a75680354c27438b90720db98a8febfe.jpg" class="card-img-top" alt="beshbarmak">
-                        <div class="card-body">
-                            <h5 class="card-title">Cocktail</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">PRICE: 990 KZT</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="https://www.foodandwine.com/thmb/6wTm7a0y87X97LK-ZMxe2787kI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/different-types-of-tea-FT-BLOG0621-7c7fd231e66d4fea8ca9a47cad52ba79.jpg" class="card-img-top" alt="beshbarmak">
-                            <div class="card-body">
-                                <h5 class="card-title">Tea</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">PRICE: 990 KZT</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://www.thespruceeats.com/thmb/9mD9vkhG8koskO0DMuOfC8Kh5Kw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thai-limeade-recipe-3217359-hero-02-91dbbaac0ec349e4b8f640aee05d18d1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Lime juice</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">NEW PRICE: 1990 KZT</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <h1 style="text-align: center;">Restaurant Dish Category Matching Game</h1>
+        <div class="game-container">
+            <div class="category-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Categories</h2>
+                <div class="droppable" data-category="Appetizer" ondrop="drop(event)" ondragover="allowDrop(event)">Appetizer</div>
+                <div class="droppable" data-category="Main Course" ondrop="drop(event)" ondragover="allowDrop(event)">Main Course</div>
+                <div class="droppable" data-category="Dessert" ondrop="drop(event)" ondragover="allowDrop(event)">Dessert</div>
             </div>
-            <br>
-            
-
-
-
-
-
-
+            <div class="dish-column">
+                <h2>Dishes</h2>
+                <div class="draggable" data-category="Main Course" draggable="true" ondragstart="drag(event)">Spaghetti Bolognese</div>
+                <div class="draggable" data-category="Dessert" draggable="true" ondragstart="drag(event)">Chocolate Cake</div>
+                <div class="draggable" data-category="Appetizer" draggable="true" ondragstart="drag(event)">Mozzarella Sticks</div>
+            </div>
+        </div>
+        <button id="check"class="button-28" onclick="checkAnswers()">Check Answers</button>
+        <audio id="correctAudio" src="correct_sound_effect.mp3" preload="auto"></audio>
+        <audio id="wrongAudio" src="wrong_sound_effect.mp3" preload="auto"></audio>
+        <div id="result" ></div>
+        <div id="instructions" style="border:2px solid #07575b">
+            <p>Instructions:</p>
+            <p>1. Drag the dishes from the right column and drop them into the matching category on the left.</p>
+            <p>2. To match correctly, make sure the dish and category have the same text.</p>
+            <p>3. You have one try, and incorrect answers will be colored in red.</p>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('mouseover', () => {
+             button.style.backgroundColor = '#07575b';});
+             button.addEventListener('mouseout', () => {
+             button.style.backgroundColor = '';});
+             $(document).ready(function(){
+                 $('[data-toggle="tooltip"]').tooltip();
+  });
+    </script>
 </body>
-
 </html>

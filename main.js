@@ -188,3 +188,71 @@ const nextButton = document.querySelector(".carousel-control-next");
 
 prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", nextSlide);
+var tries = 1;
+var isGameOver = false;
+var isTimerStarted = false;
+var timerInterval;
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drag(event) {
+  if (!isGameOver) {
+    event.dataTransfer.setData('text', event.target.getAttribute('data-category'));
+  }
+}
+
+function drop(event) {
+  if (!isGameOver) {
+    event.preventDefault();
+    var category = event.dataTransfer.getData('text');
+    if (category === event.target.getAttribute('data-category')) {
+      event.target.classList.add('correct-match');
+    } else {
+      event.target.classList.add('incorrect-match');
+    }
+  }
+}
+
+function checkAnswers() {
+    if (!isGameOver) {
+      clearInterval(timerInterval);
+      isGameOver = true;
+      var droppableElements = document.querySelectorAll('.droppable');
+      var correctMatches = 0;
+      droppableElements.forEach(function (droppableElement) {
+        if (droppableElement.classList.contains('correct-match')) {
+          correctMatches++;
+          droppableElement.style.backgroundColor = 'green'; 
+        } else {
+          droppableElement.style.backgroundColor = 'red'; 
+        }
+      });
+    }
+    if (correctMatches === droppableElements.length) {
+        var resultElement = document.getElementById('result');
+        resultElement.innerHTML = 'Congratulations! You matched all dishes with the correct categories. You receive a 20% discount.';
+        resultElement.style.color = 'green';
+        resultElement.style.fontSize = '24px'; 
+        resultElement.style.fontWeight = 'bold'; 
+      
+        document.getElementById('correctAudio').play();
+      } else {
+        var resultElement = document.getElementById('result');
+        resultElement.innerHTML = 'Some matches are incorrect. You have used your one try.';
+        resultElement.style.color = 'red';
+        resultElement.style.fontSize = '24px'; 
+        resultElement.style.fontWeight = 'bold';
+      
+        document.getElementById('wrongAudio').play();
+      }
+}
+
+
+  
+
+
+
+
+
